@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador: Intuição vs. Prova - O Relógio Roubado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="qrcode-simbol">📱🔲</div>
+            <h1>Simulador "Intuição vs. Prova"</h1>
+            <h2>⚖️ O Caso do Relógio Roubado</h2>
+            <p class="subtitulo">Você é o(a) delegado(a) responsável. Analise o caso e tome uma decisão.</p>
+        </header>
+
+        <main id="app">
+            <!-- Fase 1: Apresentação do Caso -->
+            <section id="fase-apresentacao" class="fase ativa">
+                <h3>📋 O Caso</h3>
+                <div class="card">
+                    <p>Um relógio de luxo foi roubado de um hotel no centro da cidade. As câmeras mostram uma pessoa saindo do local às 15h47 com um objeto semelhante ao relógio.</p>
+                    <p><strong>Suspeito:</strong> Carlos Eduardo, 34 anos, hóspede do hotel.</p>
+                    <p><strong>Comportamento durante o depoimento:</strong></p>
+                    <ul>
+                        <li>⏳ Hesitou ao responder o que estava fazendo no horário do crime.</li>
+                        <li>😥 Desviou o olhar e coçou a nuca repetidamente.</li>
+                        <li>🗣️ Sua voz tremeu em momentos-chave.</li>
+                    </ul>
+                    <p><strong>Álibi apresentado:</strong> Um vídeo de segurança do saguão do hotel (com horário visível: 15h45 até 16h00) mostra Carlos sentado no lobby, mexendo no celular, ininterruptamente.</p>
+                    <button id="btn-ver-provas" class="btn">Analisar Provas</button>
+                </div>
+            </section>
+
+            <!-- Fase 2: Intuição vs Prova (Escolha) -->
+            <section id="fase-escolha" class="fase">
+                <h3>🧠 Intuição x 📹 Prova</h3>
+                <div class="card escolha-card">
+                    <p class="conflito">O comportamento de Carlos foi nervoso, mas o vídeo mostra ele no lobby no momento do crime.</p>
+                    <p><strong>Qual será sua decisão?</strong></p>
+                    <div class="botoes-escolha">
+                        <button id="escolher-intuicao" class="btn btn-intuicao">Confiar na Intuição: Ele está mentindo. O vídeo pode ter sido adulterado ou ele tem um comparsa.</button>
+                        <button id="escolher-prova" class="btn btn-prova">Confiar na Prova: O vídeo é claro. O nervosismo pode ser estresse da situação. Inocente.</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fase 3: Feedback e Resultado -->
+            <section id="fase-resultado" class="fase">
+                <h3>📊 Resultado & Análise</h3>
+                <div class="card resultado-card">
+                    <div id="resultado-texto" class="resultado-destaque">
+                        <!-- Preenchido via JS -->
+                    </div>
+                    <div id="feedback-cientifico" class="feedback">
+                        <!-- Preenchido via JS -->
+                    </div>
+                    <div id="caso-brasil" class="caso-real">
+                        <!-- Preenchido via JS -->
+                    </div>
+                    <button id="btn-reiniciar" class="btn">🔁 Investigar Novamente</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Baseado em achados de Elaad (2022) e casos reais brasileiros.</p>
+            <p>www.arquiteturasdaduvida.org/simulador-intuicao</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
